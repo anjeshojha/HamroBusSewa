@@ -25,7 +25,7 @@ export default class HamroBusUI extends Component {
                         <Image source = {require('./image/search.png')}/>
                         <Text style = {styles.buttonText}> FIND MY BUS </Text> 
                 </TouchableOpacity>
-                <Text style = {styles.textMessage}>────────  Already Booked a Seat..?  ────────</Text>
+                <Text style = {styles.textMessage}>───  Already Booked a Seat..?  ───</Text>
                 <TextInput  style = {styles.input} underlineColorAndroid = 'transparent' placeholder = "Username" placeholderTextColor = '#fff' />
                 <TextInput  style = {styles.input} underlineColorAndroid = 'transparent' placeholder = "Password" placeholderTextColor = '#fff' secureTextEntry/>
                 <TouchableOpacity onPress={() => {Alert.alert("You Clicked Me")}} style = {styles.buttons}> 

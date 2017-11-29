@@ -24,37 +24,6 @@ export default class HamroBusUI extends Component {
       render() {
           return(
         <KeyboardAvoidingView behavior = "padding" style = {styles.mainWrapper}> 
-            <Picker  onValueChange = {(itemValue, itemIndex) => this.setState({category : itemValue})} itemStyle = {styles.picker}>
-                <Picker.Item value = "Nepali" label = "Nepali" />
-                <Picker.Item value = "English" label = "English" />
-            </Picker>
-
-            <DatePicker
-                    style={{width: 200, height : 50}}
-                    date={this.state.date}
-                    mode="date"
-                    placeholder="select date"
-                    format="YYYY-MM-DD"
-                    minDate="2016-05-01"
-                    maxDate="2016-06-01"
-                    confirmBtnText="Confirm"
-                    cancelBtnText="Cancel"
-                    customStyles={{
-                      dateIcon: {
-                        position: 'absolute',
-                        left: 0,
-                        top: 4,
-                        marginLeft: 0
-                      },
-                      dateInput: {
-                        marginLeft: 36
-                      }
-                      // ... You can check the source to find the other keys.
-                    }}
-                    onDateChange={(date) => {this.setState({date: date})}}
-                  />
-
-            <Text> {this.state.category}</Text>
             <View style = {styles.topWrapper}>
                 <Image source = {require('../image/bus.png')} style = {styles.busIcon}/>
                 <Text style = {styles.mainTitle}> HAMRO BUS  SEWA</Text>
